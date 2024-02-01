@@ -8,6 +8,11 @@ const Herosection = () => {
                 <p className='italic pt-4'>"Welcome to FlavorFusionHub - your ultimate destination for culinary delight! Discover a world of flavors, from savory to sweet, all in one place. Whether you're craving classics or eager to explore new tastes,
                     our app brings the best of dining right to your fingertips. Bon appétit!"
                 </p>
+                <buttonsection className="flex gap-5 pt-8">
+                    <button className='bg-[#FF5454] px-6 py-3 rounded-full text-white text-md'>Get started</button>
+                    <button className='text-[#FF5454] px-6 py-3 rounded-full bg-white text-md'>Watch Video</button>
+
+                </buttonsection>
             </div>
             <div className='h-full bg-[#FCD3D1] rounded-l-full'>
                 <img src={herobg} alt='logo' className='h-full ' />
