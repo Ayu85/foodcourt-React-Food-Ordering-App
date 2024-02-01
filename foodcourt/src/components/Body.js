@@ -1,10 +1,13 @@
 import React from 'react'
-
+import Header from './Header'
 const Body = () => {
+
     return (
-        <div>
-            food court
-        </div>
+        <>
+            <Header />
+            document body page
+        </>
+
     )
 }
 
