@@ -5,6 +5,7 @@ import { toogleHeader } from '../redux/slices/HeaderSlice'
 import { Link } from 'react-router-dom'
 import useScroll from '../hooks/useScroll'
 import { IoMdLogIn } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
     const isTransparentHeader = useSelector(store => store.headerTransparency.value)
@@ -12,7 +13,7 @@ const Header = () => {
     return (
         <div className={`z-50 flex sticky top-0 justify-between px-20 py-3 items-center bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3] ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
             <div><img src={logo} alt='logo' /></div>
-            <div className='list-none flex gap-3 text-lg items-center'>
+            <div className='list-none lg:flex gap-3 text-lg items-center md:hidden sm:hidden '>
                 <li className='text-[#FF5454]'>Why foodcourt ?</li>
                 <li>Services</li>
                 <li>Menu</li>
@@ -21,14 +22,16 @@ const Header = () => {
                 </li>
                 </Link>
             </div>
+            <div className='lg:hidden sm:block md:block '><RxHamburgerMenu className='text-4xl cursor-pointer'/>
+            </div>
         </div>
     )
 }
 
 export const LoginHeader = () => {
     <div className=' bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3]   text-teal-950'>
-        <img src={logo} alt='logo' className='w-44'/>
-        
+        <img src={logo} alt='logo' className='w-44' />
+
     </div>
 }
 export default Header
