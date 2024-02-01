@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className={`z-50 flex sticky top-0 justify-between px-20 py-3 items-center bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3] ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
             <div><img src={logo} alt='logo' /></div>
-            <div className='list-none lg:flex gap-3 text-lg items-center md:hidden sm:hidden '>
+            <div className='list-none lg:flex gap-3 text-lg items-center md:hidden sm:hidden hidden'>
                 <li className='text-[#FF5454]'>Why foodcourt ?</li>
                 <li>Services</li>
                 <li>Menu</li>
