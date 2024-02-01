@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const HeaderSlice = createSlice({
-    name: "header",
+    name: "headerTransparency",
     initialState: {
         value: false
     },
     reducers: {
-        toogleHeader: (state) => {
-            state.value = !state.value
+        toogleHeader: (state,action) => {
+            state.value = action.payload
         }
     }
 })
-export default HeaderSlice.actions;
-export const { toogleHeader } = HeaderSlice.reducer;
+export default HeaderSlice.reducer;
+export const { toogleHeader } = HeaderSlice.actions;
