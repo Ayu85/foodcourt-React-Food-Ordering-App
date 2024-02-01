@@ -6,7 +6,7 @@ const useScroll = () => {
     const dispatch = useDispatch();
     window.addEventListener('scroll', (e) => {
         // eslint-disable-next-line no-restricted-globals
-        console.log(scrollY);
+        // console.log(scrollY);
         // eslint-disable-next-line no-restricted-globals
         if (scrollY > 50)
             dispatch(toogleHeader(true))

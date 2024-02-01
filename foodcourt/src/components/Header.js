@@ -6,13 +6,19 @@ import { Link } from 'react-router-dom'
 import useScroll from '../hooks/useScroll'
 import { IoMdLogIn } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { setHamburger, setSymbol } from '../redux/slices/HamburgerSlice'
 
 const Header = () => {
     const isTransparentHeader = useSelector(store => store.headerTransparency.value)
-    const showHamburger = useSelector(store => store.hamburgerslice.value)
+    const showHamburgersymbol = useSelector(store => store.hamburgerslice.symbol)
+    const showHamburgermenu = useSelector(store => store.hamburgerslice.menu)
+
+    console.log(showHamburgersymbol);
+
     useScroll();
+    const dispatch = useDispatch();
     return (
-        <div className={`z-50 flex sticky top-0 justify-between lg:px-20 md:px-20 sm:px-10 px-10 sm:gap-10 py-3 items-center bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3] ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
+        <div className={`  z-50  flex sticky top-0 justify-between lg:px-20 md:px-20 sm:px-10 px-10 sm:gap-10 py-3 items-center bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3] ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
             <div><img src={logo} alt='logo' /></div>
             <div className='list-none lg:flex gap-3 text-lg items-center md:hidden sm:hidden hidden'>
                 <li className='text-[#FF5454]'>Why foodcourt ?</li>
@@ -23,10 +29,14 @@ const Header = () => {
                 </li>
                 </Link>
             </div>
-            <div className='lg:hidden sm:block md:block '><RxHamburgerMenu className='text-4xl cursor-pointer' />
+            <div className='lg:hidden sm:block md:block ' onClick={() => {
+                dispatch(setHamburger(!showHamburgermenu))
+            }}><RxHamburgerMenu className='text-4xl cursor-pointer' />
             </div>
             {
-                showHamburger && <div className='absolute right-0 top-20 text-xl list-none gap-10 flex flex-col bg-[#ffd5d486] backdrop-blur-sm px-10 py-10 rounded-sm h-screen'>
+                showHamburgermenu && <div className={`absolute right-0 top-20 text-xl
+                 list-none gap-10 flex flex-col bg-[#ffd5d486] backdrop-blur-sm 
+                 px-10 py-10 rounded-sm h-[100vh]    `}>
                     <li className='text-[#FF5454]'>Why foodcourt ?</li>
                     <li>Services</li>
                     <li>Menu</li>
