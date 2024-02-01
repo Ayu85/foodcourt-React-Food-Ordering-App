@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toogleHeader } from '../redux/slices/HeaderSlice'
 import { Link } from 'react-router-dom'
 import useScroll from '../hooks/useScroll'
+import { IoMdLogIn } from "react-icons/io";
+
 const Header = () => {
     const isTransparentHeader = useSelector(store => store.headerTransparency.value)
     useScroll();
@@ -15,7 +17,8 @@ const Header = () => {
                 <li>Services</li>
                 <li>Menu</li>
                 <li>Contact</li>
-                <Link to={'login'}> <li className='bg-[#FF5454] py-2 rounded-full px-4 text-white'>Login</li>
+                <Link to={'login'}> <li className='bg-[#FF5454] py-2 rounded-full px-4 flex items-center gap-1 hover:bg-zinc-800 transition-all duration-300 text-white'>Login<IoMdLogIn />
+                </li>
                 </Link>
             </div>
         </div>
