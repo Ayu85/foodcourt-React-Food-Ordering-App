@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Body from './components/Body';
 import Login from './components/Login';
 import { Provider } from 'react-redux';
-import store from './utils/store';
+import store from './redux/store';
 const approute = createBrowserRouter([
   {
     path: "/",
@@ -17,7 +17,7 @@ function App() {
   return (
     <Provider store={store}>
        <RouterProvider router={approute} />
-       </Provider>
+      </Provider>
   );
 }
 
