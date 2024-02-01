@@ -25,4 +25,10 @@ const Header = () => {
     )
 }
 
+export const LoginHeader = () => {
+    <div className=' bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3]   text-teal-950'>
+        <img src={logo} alt='logo' className='w-44'/>
+        
+    </div>
+}
 export default Header
