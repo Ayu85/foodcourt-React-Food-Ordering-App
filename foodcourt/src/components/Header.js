@@ -34,9 +34,9 @@ const Header = () => {
             }}><RxHamburgerMenu className='text-4xl cursor-pointer' />
             </div>
             {
-                showHamburgermenu && <div className={`absolute right-0 top-20 text-xl
-                 list-none gap-10 flex flex-col bg-[#ffd5d486] backdrop-blur-sm 
-                 px-10 py-10 rounded-sm h-[100vh]    `}>
+                 <div className={`absolute right-0 top-20 text-xl
+                 list-none gap-10 flex flex-col bg-[#ffd6d592] backdrop-blur-sm 
+                 px-10 py-10 rounded-sm h-[100vh] ${!showHamburgermenu && "translate-x-52 transition-all duration-200"} ${showHamburgermenu && "-translate-x-0 transition-all duration-200"}`}>
                     <li className='text-[#FF5454]'>Why foodcourt ?</li>
                     <li>Services</li>
                     <li>Menu</li>
