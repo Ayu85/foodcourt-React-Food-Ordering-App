@@ -11,7 +11,7 @@ const Header = () => {
     const isTransparentHeader = useSelector(store => store.headerTransparency.value)
     useScroll();
     return (
-        <div className={`z-50 flex sticky top-0 justify-between px-20 py-3 items-center bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3] ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
+        <div className={`z-50 flex sticky top-0 justify-between lg:px-20 md:px-20 sm:px-10 px-10 sm:gap-10 py-3 items-center bg-gradient-to-l from-[#FFD5D4] to-[#FFF4F3] ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
             <div><img src={logo} alt='logo' /></div>
             <div className='list-none lg:flex gap-3 text-lg items-center md:hidden sm:hidden hidden'>
                 <li className='text-[#FF5454]'>Why foodcourt ?</li>
@@ -22,7 +22,16 @@ const Header = () => {
                 </li>
                 </Link>
             </div>
-            <div className='lg:hidden sm:block md:block '><RxHamburgerMenu className='text-4xl cursor-pointer'/>
+            <div className='lg:hidden sm:block md:block '><RxHamburgerMenu className='text-4xl cursor-pointer' />
+            </div>
+            <div className='absolute right-0 top-20 text-xl list-none gap-10 flex flex-col bg-[#ffd5d486] backdrop-blur-sm px-10 py-10 rounded-sm h-screen'>
+                <li className='text-[#FF5454]'>Why foodcourt ?</li>
+                <li>Services</li>
+                <li>Menu</li>
+                <li>Contact</li>
+                <Link to={'login'}> <li className='bg-[#FF5454] py-2 rounded-full px-4 flex items-center gap-1 hover:bg-zinc-800 transition-all duration-300 text-white'>Login<IoMdLogIn />
+                </li>
+                </Link>
             </div>
         </div>
     )
