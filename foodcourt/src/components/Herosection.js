@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import herobg from "../assets/herobg.png"
 import { TbChartDonutFilled } from "react-icons/tb";
 import { ImLocation2 } from "react-icons/im";
@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom';
 import { IoMdLogIn } from "react-icons/io";
 
 const Herosection = () => {
+    useEffect(() => {
+
+    }, [])
     const showHamburgermenu = useSelector(store => store.hamburgerslice.menu)
     return (
         <div className='relative bg-gradient-to-l cd f  from-[#FFD5D4] to-[#FFF4F3] gap-5 h-[100vh] flex justify-between items-center '>
@@ -32,7 +35,7 @@ const Herosection = () => {
                 <img src={herobg} alt='logo' className='h-full ' />
             </div>
             {
-                 <div className={`absolute right-0 top-0 text-xl z-50
+                <div className={`absolute right-0 top-0 text-xl z-50
                  list-none gap-10 flex flex-col bg-[#ffd6d592] backdrop-blur-sm 
                  px-10 py-10 rounded-sm h-[100vh] ${!showHamburgermenu && "translate-x-52 transition-all duration-200"} ${showHamburgermenu && "-translate-x-0 transition-all duration-200"}`}>
                     <li className='text-[#FF5454]'>Why foodcourt ?</li>
