@@ -8,10 +8,17 @@ import { Link } from 'react-router-dom';
 import { IoMdLogIn } from "react-icons/io";
 
 const Herosection = () => {
-    useEffect(() => {
-
-    }, [])
+    const disableScroll = () => {
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+    }
+    const enableScroll = () => {
+        document.getElementsByTagName('body')[0].style.overflow = 'visible'
+    }
     const showHamburgermenu = useSelector(store => store.hamburgerslice.menu)
+    useEffect(() => {
+        showHamburgermenu && disableScroll();
+        !showHamburgermenu && enableScroll();
+    }, [showHamburgermenu])
     return (
         <div className='relative bg-gradient-to-l cd f  from-[#FFD5D4] to-[#FFF4F3] gap-5 h-[100vh] flex justify-between items-center '>
             <div className='absolute top-44  -left-14'><TbChartDonutFilled className='text-9xl text-[#f8b5ad] animate-[spin_4s_ease-in-out_infinite] ' />
