@@ -21,7 +21,7 @@ const Herosection = () => {
         !showHamburgermenu && enableScroll();
     }, [showHamburgermenu])
     return (
-        <div className='relative bg-gradient-to-l cd f  from-[#FFD5D4] to-[#FFF4F3] gap-5 h-[100vh] flex justify-between items-center '>
+        <div className='relative bg-gradient-to-l   from-[#FFD5D4] to-[#FFF4F3] gap-5 h-[100vh] flex justify-between items-center '>
             <div className='absolute top-44  -left-14'><TbChartDonutFilled className='text-9xl text-[#f8b5ad] animate-[spin_4s_ease-in-out_infinite] ' />
             </div>
             <div className='absolute top-10  lg:right-[750px] sm:right-44 right-44 hidden md:block lg:block'><ImLocation2 className='text-8xl text-[#F64E61] animate-[bounce_2s_ease-in-out_infinite] ' />
