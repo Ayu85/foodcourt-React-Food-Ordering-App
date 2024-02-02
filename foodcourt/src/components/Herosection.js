@@ -15,6 +15,7 @@ const Herosection = () => {
         document.getElementsByTagName('body')[0].style.overflow = 'visible'
     }
     const showHamburgermenu = useSelector(store => store.hamburgerslice.menu)
+    const isHeightScrolled = useSelector(store => store.headerTransparency.value)
     useEffect(() => {
         showHamburgermenu && disableScroll();
         !showHamburgermenu && enableScroll();
@@ -42,7 +43,7 @@ const Herosection = () => {
                 <img src={herobg} alt='logo' className='h-full ' />
             </div>
             {
-                <div className={`absolute right-0 top-0 text-xl z-50
+               <div className={`absolute right-0 top-0 text-xl z-50
                  list-none gap-10 flex flex-col bg-[#ffd6d592] backdrop-blur-sm 
                  px-10 py-10 rounded-sm h-[100vh] ${!showHamburgermenu && "translate-x-52 transition-all duration-200"} ${showHamburgermenu && "-translate-x-0 transition-all duration-200"}`}>
                     <li className='text-[#FF5454]'>Why foodcourt ?</li>

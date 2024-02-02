@@ -1,4 +1,3 @@
-import React from 'react'
 import { useDispatch } from 'react-redux';
 import { toogleHeader } from '../redux/slices/HeaderSlice';
 

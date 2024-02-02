@@ -29,11 +29,12 @@ const Header = () => {
                 </li>
                 </Link>
             </div>
-            <div className='lg:hidden sm:block md:block ' onClick={() => {
+            {!isTransparentHeader && <div className='lg:hidden sm:block md:block ' onClick={() => {
                 dispatch(setHamburger(!showHamburgermenu))
-            }}><RxHamburgerMenu className='text-4xl cursor-pointer' />
-            </div>
-            
+            }}>
+                <RxHamburgerMenu className='text-4xl cursor-pointer' />
+            </div>}
+
         </div>
     )
 }
