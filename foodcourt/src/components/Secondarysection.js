@@ -4,7 +4,8 @@ import delivery from "../assets/delivery2.png"
 import menufood from "../assets/menu.png"
 const Secondarysection = () => {
   return (
-    <div className='lg:flex-row justify-between lg:px-20 lg:pt-20 lg:py-10 bg-gradient-to-l from-[#f9dbce] md:flex md:flex-col items-center md:gap-36 md:pt-10 sm:pt-10 sm:flex sm:flex-col sm:gap-36 '>
+    <div className='lg:flex-row  lg:px-20 lg:pt-20 lg:py-10 bg-gradient-to-l from-[#f9dbce] md:flex md:flex-col
+     items-center md:gap-36 md:pt-10 sm:pt-10 sm:flex sm:flex-col sm:gap-36 pt-10 flex flex-col justify-center gap-28'>
       <div className='flex flex-col max-w-96 gap-4 mt-6 relative'>
         <h1 className='text-3xl font-bold'>Why we are best?</h1>
         <p1 className="italic ">Discover the excellence of our food ordering website. With seamless navigation, real-time updates, and a tantalizing array of culinary options, we redefine convenience and taste.
