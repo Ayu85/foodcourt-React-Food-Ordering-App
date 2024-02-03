@@ -2,6 +2,8 @@ import React from 'react'
 import instantfood from "../assets/instantfood.png"
 import delivery from "../assets/delivery2.png"
 import menufood from "../assets/menu.png"
+import { FaDotCircle } from "react-icons/fa";
+
 const Secondarysection = () => {
   return (
     <div className='lg:flex-row  lg:px-20 lg:pt-20 lg:py-10 bg-gradient-to-l from-[#f9dbce] md:flex md:flex-col
@@ -13,11 +15,14 @@ const Secondarysection = () => {
         <button className='bg-[#FF5454] px-6 w-36 py-3 rounded-full text-white text-md'> Read more</button>
         <div className='absolute -z-10 bg-[#f5ddd3] w-60 h-72 -left-14 top-6 animate-wiggle'></div>
       </div>
-      <div className='flex gap-10  relative'>
+      <div className='flex gap-10  relative mt-5'>
         <img src={instantfood} alt='instant food ' className='bg-[#fff8f4] z-20 w-48 h-72 rounded-3xl  shadow-[#fbaaa8]' />
         <img src={delivery} alt='instant food ' className=' bg-[#fff8f4] w-48 h-72 rounded-3xl mt-12  shadow-[#fba9a8a4]' />
         <img src={menufood} alt='instant food ' className='bg-[#fff8f4] w-48 h-72 rounded-3xl  shadow-[#fbaaa8]' />
-        <div className='absolute hidden md:block lg:block  text-9xl font-bold lg:-bottom-12 md:-bottom-5 w-max -left-20 text-[#fe7171] select-none'>Eat with ease</div>
+        <div className='absolute hidden md:block lg:block  text-9xl font-bold lg:-bottom-12 md:-bottom-5 w-max -left-20 text-[#fe7171] select-none
+     '>Eat with ease</div>
+        <FaDotCircle className='text-[300px] text-[#ffd5c3] -z-10 right-24 -top-20 absolute ' />
+
       </div>
     </div>
   )
