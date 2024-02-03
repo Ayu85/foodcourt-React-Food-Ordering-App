@@ -4,7 +4,8 @@ import burger from "../assets/burger.png"
 import cake from "../assets/cake.png"
 import pizza from "../assets/pizza.png"
 import snack from "../assets/fastfood.png"
-
+import RestaurantCard from './RestaurantCard'
+import { mockBurgerData } from '../utils/__mocks__'
 
 const FoodContainer = () => {
     return (
@@ -29,6 +30,13 @@ const FoodContainer = () => {
             </div>
             <div>
                 {/* box 3 */}
+                {
+                    mockBurgerData.map((items) => {
+                        return <RestaurantCard {...items?.card?.card?.info} />
+
+                    })
+
+                }
             </div>
 
         </div>

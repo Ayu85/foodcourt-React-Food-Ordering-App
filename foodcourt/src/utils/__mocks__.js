@@ -4,117 +4,6 @@ export const mockPizzaData = [
             "card": {
                 "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
                 "info": {
-                    "id": "87263",
-                    "name": "KFC",
-                    "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
-                    "locality": "Celestial Building",
-                    "areaName": "Sigra",
-                    "costForTwo": "₹400 for two",
-                    "cuisines": [
-                        "Burgers",
-                        "Biryani",
-                        "American",
-                        "Snacks",
-                        "Fast Food"
-                    ],
-                    "avgRating": 3.9,
-                    "feeDetails": {
-                        "restaurantId": "87263",
-                        "fees": [
-                            {
-                                "name": "BASE_DISTANCE",
-                                "fee": 2700
-                            },
-                            {
-                                "name": "BASE_TIME"
-                            },
-                            {
-                                "name": "ANCILLARY_SURGE_FEE"
-                            }
-                        ],
-                        "totalFee": 2700
-                    },
-                    "parentId": "547",
-                    "avgRatingString": "3.9",
-                    "totalRatingsString": "10K+",
-                    "promoted": true,
-                    "adTrackingId": "cid=9732321~p=3~eid=0000018c-23e5-8163-269d-59ba0079030b~srvts=1701409292643~83637",
-                    "sla": {
-                        "deliveryTime": 33,
-                        "lastMileTravel": 2.5,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "33 mins",
-                        "lastMileTravelString": "2.5 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                    },
-                    "availability": {
-                        "nextCloseTime": "2023-12-02 02:00:00",
-                        "opened": true
-                    },
-                    "badges": {},
-                    "isOpen": true,
-                    "aggregatedDiscountInfoV2": {
-                        "header": "40% OFF",
-                        "shortDescriptionList": [
-                            {
-                                "meta": "Use SWIGGYIT",
-                                "discountType": "Percentage",
-                                "operationType": "RESTAURANT"
-                            }
-                        ],
-                        "descriptionList": [
-                            {
-                                "meta": "40% off up to ₹80 on select items | Use code SWIGGYIT",
-                                "discountType": "Percentage",
-                                "operationType": "RESTAURANT"
-                            }
-                        ]
-                    },
-                    "type": "F",
-                    "badgesV2": {
-                        "entityBadges": {
-                            "textBased": {},
-                            "imageBased": {},
-                            "textExtendedBadges": {}
-                        }
-                    },
-                    "orderabilityCommunication": {
-                        "title": {},
-                        "subTitle": {},
-                        "message": {},
-                        "customIcon": {}
-                    },
-                    "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                            "lottie": {},
-                            "video": {}
-                        }
-                    },
-                    "reviewsSummary": {},
-                    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                    "restaurantOfferPresentationInfo": {}
-                },
-                "analytics": {},
-                "cta": {
-                    "link": "swiggy://menu?restaurant_id=87263&source=collection&query=Burger",
-                    "text": "RESTAURANT_MENU",
-                    "type": "DEEPLINK"
-                },
-                "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-            },
-            "relevance": {
-                "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-                "sectionId": "MENU_RETURN_FOOD"
-            }
-        }
-    },
-    {
-        "card": {
-            "card": {
-                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-                "info": {
                     "id": "234903",
                     "name": "Burger King",
                     "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
@@ -1446,7 +1335,8 @@ export const mockBurgerData = [
                 "sectionId": "MENU_RETURN_FOOD"
             }
         }
-    }, {
+    },
+    {
         "card": {
             "card": {
                 "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
@@ -1541,7 +1431,8 @@ export const mockBurgerData = [
                 "sectionId": "MENU_RETURN_FOOD"
             }
         }
-    }, {
+    },
+    {
         "card": {
             "card": {
                 "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
