@@ -12,7 +12,7 @@ const FoodContainer = () => {
             <div className='text-center'>
                 {/* box1 (heading and sub heading)*/}
                 <h1 className='text-3xl font-semibold'>Choose your favourite food !! </h1>
-                <p className='text-lg text-slate-600'>Get your customized taste choosen amongt 15000+ top rated restaurants</p>
+                <p className='text-md text-slate-600 pt-1'>Get your customized taste choosen amongst 15000+ top rated restaurants</p>
             </div>
             <div className='flex gap-3 pt-5'>
                 {/* box 2 */}
