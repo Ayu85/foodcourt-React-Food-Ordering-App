@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
-import burger from "../assets/Fresh_beef_burger_isolated_-1-removebg-preview.png"
-import pizza from "../assets/delicious-italian-food-removebg-preview.png"
-import chicken from "../assets/Delicious_fried_chicken_with_french_fries_-5-removebg-preview.png"
 const Login = () => {
     const [isSignin, setSignin] = useState(false)
     return (
-        <div className='brightness-90   gap-3 h-[100vh] bg-hero bg-cover filter flex flex-col items-center justify-center' >
+        <div className='brightness-90 bg-food  gap-3 h-[100vh]  bg-cover filter flex flex-col items-center justify-center' >
             {!isSignin && <><h1 className='text-4xl text-black font-serif font-semibold py-3  '>Login</h1>
                 <h1>More than <span className='text-[#FF5454] font-semibold'>15000+ Recipes</span> around the world</h1>
                 <div className='flex items-center flex-col py-5 justify-center bg-[#ffd5d481] bg-white  backdrop-blur-sm w-[450px] rounded-lg'>
