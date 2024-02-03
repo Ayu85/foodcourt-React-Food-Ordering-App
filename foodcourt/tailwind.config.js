@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('https://img.freepik.com/free-photo/top-view-ramen-soup-dumplings-with-copy-space_23-2148368678.jpg?w=996&t=st=1706897698~exp=1706898298~hmac=fb0f879e2eacbcc3e5e092b04b591553e913c2130ac90ac61229bdf3e31098b2')"
+        hero: "url('https://img.freepik.com/free-photo/top-view-chocolate-stuff_23-2148019502.jpg?w=996&t=st=1706943422~exp=1706944022~hmac=7fa4d28801dac9c7921c84618f1099a8980154b1f0e2106d2101ff3a70cb50bd')"
       }
     },
   },
