@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import chicken from "../assets/chicken.png"
 import burger from "../assets/burger.png"
 import cake from "../assets/cake.png"
@@ -6,10 +8,29 @@ import pizza from "../assets/pizza.png"
 import snack from "../assets/fastfood.png"
 import RestaurantCard from './RestaurantCard'
 import { mockBurgerData } from '../utils/__mocks__'
-
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
 const FoodContainer = () => {
+    const [burgerdata, setBurger] = useState(mockBurgerData);
     return (
-        <div className='flex flex-col justify-center items-center pt-10'>
+        <div className='flex flex-col justify-center items-center pt-10 bg-[#fff8f4]'>
             <div className='text-center'>
                 {/* box1 (heading and sub heading)*/}
                 <h1 className='text-3xl font-semibold'>Choose your favourite food !! </h1>
@@ -28,15 +49,12 @@ const FoodContainer = () => {
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={snack} alt='logo' className='w-9' />Snack</div>
             </div>
-            <div className='flex gap-4 flex-wrap'>
+            <div className='flex flex-wrap gap-6 px-20 justify-center pt-9 '>
                 {/* box 3 */}
-                {
-                    mockBurgerData.map((items) => {
-                        return <RestaurantCard {...items?.card?.card?.info} />
+                {burgerdata.map((items) => {
+                    return <RestaurantCard {...items?.card?.card?.info} />
 
-                    })
-
-                }
+                })}
             </div>
 
         </div>
