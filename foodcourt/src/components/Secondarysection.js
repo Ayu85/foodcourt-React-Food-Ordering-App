@@ -19,7 +19,7 @@ const Secondarysection = () => {
         <img src={instantfood} alt='instant food ' className='bg-[#fff8f4] z-20 w-48 h-72 rounded-3xl  shadow-[#fbaaa8]' />
         <img src={delivery} alt='instant food ' className=' bg-[#fff8f4] w-48 h-72 rounded-3xl mt-12  shadow-[#fba9a8a4]' />
         <img src={menufood} alt='instant food ' className='bg-[#fff8f4] w-48 h-72 rounded-3xl  shadow-[#fbaaa8]' />
-        <div className='absolute hidden md:block lg:block  text-9xl font-bold lg:-bottom-12 md:-bottom-5 w-max -left-20 text-[#fe7171] select-none
+        <div className='absolute hidden md:block lg:block  text-9xl font-bold lg:-bottom-12 md:-bottom-5 w-max -left-20 text-[#ffd5c3] select-none
      '>Eat with ease</div>
         <FaDotCircle className='text-[300px] text-[#ffd5c3] -z-10 right-24 -top-20 absolute ' />
 
