@@ -44,8 +44,8 @@ const Herosection = () => {
             </div>
             {
                <div className={`absolute right-0 top-0 text-xl z-50
-                 list-none gap-10 flex flex-col bg-[#ffd6d592] backdrop-blur-sm 
-                 px-10 py-10 rounded-sm h-[100vh] ${!showHamburgermenu && "translate-x-52 transition-all duration-200"} ${showHamburgermenu && "-translate-x-0 transition-all duration-200"}`}>
+                 list-none gap-10 flex flex-col bg-gradient-to-l   from-[#febea3a2] backdrop-blur-sm 
+                 px-10 py-10 rounded-sm h-[100vh] ${!showHamburgermenu && "translate-x-56 transition-all duration-200"} ${showHamburgermenu && "-translate-x-0 transition-all duration-200"}`}>
                     <li className='text-[#FF5454]'>Why foodcourt ?</li>
                     <li>Services</li>
                     <li>Menu</li>
