@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Herosection from './Herosection'
 import Secondarysection from './Secondarysection'
+import FoodContainer from './FoodContauner'
 const Body = () => {
 
     return (
@@ -9,6 +10,7 @@ const Body = () => {
             <Header />
             <Herosection/>
             <Secondarysection/>
+            <FoodContainer/>
         </>
 
     )
