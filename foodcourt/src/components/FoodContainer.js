@@ -18,9 +18,9 @@ const FoodContainer = () => {
             <div className='flex gap-3 pt-5'>
                 {/* box 2 */}
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
-                 border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={chicken} alt='logo' className='w-9' />Chicken</div>
-                <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={burger} alt='logo' className='w-9' />Burger</div>
+                <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
+                 border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={chicken} alt='logo' className='w-9' />Chicken</div>
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'> <img src={pizza} alt='logo' className='w-9' />Pizza</div>
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
@@ -28,7 +28,7 @@ const FoodContainer = () => {
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={snack} alt='logo' className='w-9' />Snack</div>
             </div>
-            <div>
+            <div className='flex gap-4 flex-wrap'>
                 {/* box 3 */}
                 {
                     mockBurgerData.map((items) => {
