@@ -16,7 +16,8 @@ const Login = () => {
                     <h2>New user ? <span className='text-[#FF5454] cursor-pointer' onClick={() => {
                         setSignin(true)
                     }}>Register Now !!</span> </h2>
-                </div ></>}
+                </div >
+            </>}
             {
                 isSignin && <><h1 className='text-4xl text-black font-serif font-semibold py-3  '>Sign In</h1>
                     <h1>More than <span className='text-[#FF5454] font-semibold'>15000+ Recipes</span> around the world</h1>
@@ -32,7 +33,7 @@ const Login = () => {
                         }}>Sign In</span> </h2>
                     </div ></>
             }
-        </div>
+        </div >
 
     )
 }
