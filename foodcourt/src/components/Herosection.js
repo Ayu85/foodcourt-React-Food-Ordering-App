@@ -39,7 +39,7 @@ const Herosection = () => {
                 </buttonsection>
 
             </div>
-            <div className='h-full bg-[#FCD3D1] rounded-l-full lg:block hidden'>
+            <div className='h-full  rounded-l-full lg:block hidden'>
                 <img src={herobg} alt='logo' className='h-full ' />
             </div>
             {

@@ -18,7 +18,7 @@ const Header = () => {
     useScroll();
     const dispatch = useDispatch();
     return (
-        <div className={`  z-50  flex sticky top-0 justify-between lg:px-20 md:px-20 sm:px-10 px-10 sm:gap-10 py-3 items-center bg-gradient-to-l from-[#FEBEA3]   ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#ffd5d492] to-[#fff4f38b]"}`}>
+        <div className={`  z-50  flex sticky top-0 justify-between lg:px-20 md:px-20 sm:px-10 px-10 sm:gap-10 py-3 items-center bg-gradient-to-l from-[#FEBEA3]   ${isTransparentHeader && "backdrop-blur-sm filter bg-gradient-to-l from-[#febea39d]"}`}>
             <div><img src={logo} alt='logo' /></div>
             <div className='list-none lg:flex gap-3 text-lg items-center md:hidden sm:hidden hidden'>
                 <li className='text-[#FF5454]'>Why foodcourt ?</li>
