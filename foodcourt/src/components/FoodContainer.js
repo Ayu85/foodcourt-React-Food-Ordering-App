@@ -30,7 +30,7 @@ const responsive = {
 const FoodContainer = () => {
     const [burgerdata, setBurger] = useState(mockBurgerData);
     return (
-        <div className='flex flex-col justify-center items-center pt-10 bg-[#fff8f4]'>
+        <div className='flex flex-col justify-center items-center pt-10 bg-[#fff2ea]'>
             <div className='text-center'>
                 {/* box1 (heading and sub heading)*/}
                 <h1 className='text-3xl font-semibold'>Choose your favourite food !! </h1>
