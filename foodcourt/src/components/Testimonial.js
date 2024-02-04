@@ -8,6 +8,7 @@ import { CUSTOMERS } from '../utils/__mocks__'
 import lines from '../assets/lines.png'
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
+import { FaDotCircle } from "react-icons/fa";
 
 const Testimonial = () => {
     let [currentUser, setCurrentUser] = useState(0);
@@ -34,7 +35,7 @@ const Testimonial = () => {
                 {/* <img src={WALL6} alt='logo' className='w-40 aspect-square rounded-full absolute bottom-28 right-10 ' /> */}
                 <img src={lines} alt='logo' className='absolute -z-10 w-full -left-20 ' />
             </div>
-            <div className='bg-[#fff2ea] w-[35%] absolute right-5 h-[90%] top-16 flex justify-center flex-col md:pl-5 lg:pl-20 sm:pl-5'>
+            <div className='bg-[#fff2ea]  w-[35%] absolute right-5 h-[90%] top-16 flex justify-center flex-col md:pl-5 lg:pl-14 sm:pl-5'>
                 <div>
                     <h1 className='text-6xl  text-zinc-700'>2000+</h1>
                     <h2 className='text-[#FF5454] text-sm tracking-wide pt-1 '>REGULAR CUSTOMERS</h2>
@@ -43,14 +44,14 @@ const Testimonial = () => {
                     <h1 className='pt-4 text-2xl pb-3 font-semibold'>Our customers says..</h1>
                     <div className='w-96 flex flex-col gap-3 pt-4 border-[#efc3c3]  px-4 py-3'>
                         {/* testimonial card */}
-                        <div className='flex items-center gap-4'>
+                        <div className='flex items-center gap-4 z-50'>
                             {/* profile and name */}
                             <img src={CUSTOMERS[currentUser].profile_picture} alt='logo' className='w-20 aspect-square rounded-full' />
                             <div><h1 className='text-xl text-zinc-800 font-semibold'>{CUSTOMERS[currentUser].name}</h1>
                                 <h2>{CUSTOMERS[currentUser].place}</h2>
                             </div>
                         </div>
-                        <div>
+                        <div className='z-50'>
                             {/* review */}
                             <p className='text-zinc-600 italic'>{CUSTOMERS[currentUser].review}</p>
                             <h2 className='pt-2'>{CUSTOMERS[currentUser].rating}⭐</h2>
@@ -64,6 +65,7 @@ const Testimonial = () => {
                     </div>
 
                 </div>
+                <div className='absolute text-9xl text-[#ffd5c3] right-0 '><FaDotCircle /></div>
             </div>
 
         </div>
