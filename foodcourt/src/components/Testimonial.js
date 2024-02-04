@@ -11,6 +11,18 @@ import { GrPrevious } from "react-icons/gr";
 
 const Testimonial = () => {
     const [currentUser, setCurrentUser] = useState(1);
+    const handlePrevious = () => {
+        if (currentUser < 0)
+            setCurrentUser(1)
+        else
+            setCurrentUser(currentUser -= 1)
+    }
+    const handleNext = () => {
+        if (currentUser > 4)
+            setCurrentUser(1)
+        else
+            setCurrentUser(currentUser += 1)
+    }
     return (
         <div className='flex px-20  pt-20 h-[90vh]  bg-gradient-to-t from-[#fff2ea] relative  border-slate-100'>
             <div className=' flex-wrap w-[65%] absolute hidden lg:flex'>
@@ -44,9 +56,9 @@ const Testimonial = () => {
                             <h2 className='pt-2'>{CUSTOMERS[currentUser].rating}⭐</h2>
                         </div>
                         <div className='flex gap-3 pt-3'>
-                            <button className='text-[#FF5454]  px-3 py-3 rounded-full bg-white border-[#ed9898] border'><GrPrevious />
+                            <button onClick={handlePrevious()} className='text-[#FF5454]  px-3 py-3 rounded-full bg-white border-[#ed9898] border'><GrPrevious />
                             </button>
-                            <button className='bg-[#FF5454] text-white px-3 py-3 rounded-full'><GrNext />
+                            <button onClick={handleNext()} className='bg-[#FF5454] text-white px-3 py-3 rounded-full'><GrNext />
                             </button>
                         </div>
                     </div>
