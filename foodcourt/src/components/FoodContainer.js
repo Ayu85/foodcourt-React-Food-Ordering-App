@@ -8,15 +8,16 @@ import pizza from "../assets/pizza.png"
 import snack from "../assets/fastfood.png"
 import RestaurantCard from './RestaurantCard'
 import { mockBurgerData } from '../utils/__mocks__'
+import Shimmer from './Shimmer';
 
 const FoodContainer = () => {
     const [burgerdata, setBurger] = useState(null);
     useEffect(() => {
         setTimeout(() => {
             setBurger(mockBurgerData)
-        }, 2000)
-    })
-    if (!burgerdata) return;
+        }, 5000)
+    }, [])
+
     return (
         <div className='flex flex-col justify-center items-center pt-10 bg-[#fff2ea]'>
             <div className='text-center'>
@@ -37,13 +38,13 @@ const FoodContainer = () => {
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={snack} alt='logo' className='w-9' />Snack</div>
             </div>
-            <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
+            {!burgerdata ? <Shimmer /> : <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
                 {/* box 3 */}
                 {burgerdata.map((items) => {
                     return <RestaurantCard {...items?.card?.card?.info} />
 
                 })}
-            </div>
+            </div>}
 
         </div>
     )
