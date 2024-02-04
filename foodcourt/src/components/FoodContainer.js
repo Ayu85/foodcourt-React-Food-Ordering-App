@@ -8,16 +8,27 @@ import pizza from "../assets/pizza.png"
 import snack from "../assets/fastfood.png"
 import RestaurantCard from './RestaurantCard'
 import { mockBurgerData } from '../utils/__mocks__'
+import { mockCakeData } from '../utils/__mocks__';
+import { mockPizzaData } from '../utils/__mocks__';
+import { mockSandwichData } from '../utils/__mocks__';
 import Shimmer from './Shimmer';
-import {useDispatch} from 'react-redux'
-import {toogleItem} from "../redux/slices/CurrentItem"
+import { useDispatch, useSelector } from 'react-redux'
+import { toogleItem } from "../redux/slices/CurrentItem"
 const FoodContainer = () => {
-    const [burgerdata, setBurger] = useState(null);
-    useEffect(() => {
-        setTimeout(() => {
-            setBurger(mockBurgerData)
-        }, 5000)
-    }, [])
+    const [burgerdata, setBurger] = useState(mockBurgerData);
+    const [pizzadata, setPizza] = useState(mockPizzaData);
+    const [cakedata, setCake] = useState(mockCakeData);
+    const [snackdata, setSnack] = useState(mockSandwichData);
+    const currentItem = useSelector(store => store.currentItem.item.name)
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setBurger(mockBurgerData)
+    //         setCake(mockBurgerData)
+    //         setPizza(mockBurgerData)
+    //         setSnack(mockBurgerData)
+    //     }, 5000)
+    // }, [])
+    console.log(currentItem);
     const dispatch = useDispatch();
     return (
         <div className='flex flex-col justify-center items-center pt-10 bg-[#fff2ea]'>
@@ -50,13 +61,37 @@ const FoodContainer = () => {
                 }} className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={snack} alt='logo' className='w-9' />Snack</div>
             </div>
-            {!burgerdata ? <Shimmer /> : <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
+            {currentItem == 'burger' && <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
                 {/* box 3 */}
                 {burgerdata.map((items) => {
                     return <RestaurantCard {...items?.card?.card?.info} />
-
                 })}
             </div>}
+            {currentItem == 'pizza' && <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
+                {/* box 3 */}
+                {pizzadata.map((items) => {
+                    return <RestaurantCard {...items?.card?.card?.info} />
+                })}
+
+            </div>
+            }
+            {currentItem == 'snack' && <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
+                {/* box 3 */}
+                {snackdata.map((items) => {
+                    return <RestaurantCard {...items?.card?.card?.info} />
+                })}
+
+            </div>
+            }
+            {currentItem == 'cake' && <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
+                {/* box 3 */}
+                {cakedata.map((items) => {
+                    return <RestaurantCard {...items?.card?.card?.info} />
+                })}
+
+            </div>
+            }
+
 
         </div>
     )
