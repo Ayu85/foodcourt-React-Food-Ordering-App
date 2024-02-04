@@ -10,7 +10,7 @@ import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 
 const Testimonial = () => {
-    const [currentUser, setCurrentUser] = useState(0);
+    const [currentUser, setCurrentUser] = useState(1);
     return (
         <div className='flex px-20  pt-20 h-[90vh]  bg-gradient-to-t from-[#fff2ea] relative  border-slate-100'>
             <div className=' flex-wrap w-[65%] absolute hidden lg:flex'>
@@ -29,19 +29,19 @@ const Testimonial = () => {
                 </div>
                 <div>
                     <h1 className='pt-4 text-2xl pb-3 font-semibold'>Our customers says..</h1>
-                    <div className='w-96 flex flex-col gap-3 pt-4 border-[#efc3c3] border px-5 py-3'>
+                    <div className='w-96 flex flex-col gap-3 pt-4 border-[#efc3c3] border px-4 py-3'>
                         {/* testimonial card */}
                         <div className='flex items-center gap-4'>
                             {/* profile and name */}
-                            <img src={CUSTOMERS[0].profile_picture} alt='logo' className='w-20 aspect-square rounded-full' />
-                            <div><h1 className='text-xl text-zinc-800 font-semibold'>{CUSTOMERS[0].name}</h1>
-                                <h2>{CUSTOMERS[0].place}</h2>
+                            <img src={CUSTOMERS[currentUser].profile_picture} alt='logo' className='w-20 aspect-square rounded-full' />
+                            <div><h1 className='text-xl text-zinc-800 font-semibold'>{CUSTOMERS[currentUser].name}</h1>
+                                <h2>{CUSTOMERS[currentUser].place}</h2>
                             </div>
                         </div>
                         <div>
                             {/* review */}
-                            <p className='text-zinc-600 italic'>{CUSTOMERS[0].review}</p>
-                            <h2 className='pt-2'>{CUSTOMERS[0].rating}⭐</h2>
+                            <p className='text-zinc-600 italic'>{CUSTOMERS[currentUser].review}</p>
+                            <h2 className='pt-2'>{CUSTOMERS[currentUser].rating}⭐</h2>
                         </div>
                         <div className='flex gap-3 pt-3'>
                             <button className='text-[#FF5454]  px-3 py-3 rounded-full bg-white border-[#ed9898] border'><GrPrevious />
