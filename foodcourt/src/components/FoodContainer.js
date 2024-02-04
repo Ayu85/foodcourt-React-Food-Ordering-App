@@ -31,7 +31,7 @@ const FoodContainer = () => {
     console.log(currentItem);
     const dispatch = useDispatch();
     return (
-        <div className='flex flex-col justify-center items-center pt-10 bg-[#fff2ea]'>
+        <div className='flex flex-col justify-center items-center pt-10 pb-10  bg-gradient-to-b from-[#fff2ea]'>
             <div className='text-center'>
                 {/* box1 (heading and sub heading)*/}
                 <h1 className='text-3xl font-semibold'>Choose your favourite food !! </h1>

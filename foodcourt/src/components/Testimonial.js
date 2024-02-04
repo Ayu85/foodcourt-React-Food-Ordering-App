@@ -8,7 +8,7 @@ import { WALL6 } from '../utils/constants'
 import lines from '../assets/lines.png'
 const Testimonial = () => {
     return (
-        <div className='flex px-20  pt-20 h-[90vh] bg-[#f7f3f071] relative'>
+        <div className='flex px-20  pt-20 h-[90vh]  bg-gradient-to-t from-[#fff2ea] relative  border-slate-100'>
             <div className=' flex-wrap w-[65%] absolute hidden lg:flex'>
                 <img src={WALL1} alt='logo' className='w-48 aspect-square rounded-full absolute top-10' />
                 <img src={WALL2} alt='logo' className='w-44 aspect-square rounded-full absolute top-72 right-44 shadow-2xl shadow-[#FF5454]' />
