@@ -23,7 +23,7 @@ const Shimmer = () => {
             <Card />
             <Card />
             <Card />
-         
+
 
         </div>
     )

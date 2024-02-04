@@ -2,11 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const currentItem = createSlice({
     name: "currentitem",
     initialState: {
-        item: "burger"
+        item: { name: "burger" }
     },
     reducers: {
         toogleItem: (state, action) => {
-            state.item = action.payload;
+            state.item.name = action.payload;
         }
     }
 })

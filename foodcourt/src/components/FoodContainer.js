@@ -9,8 +9,8 @@ import snack from "../assets/fastfood.png"
 import RestaurantCard from './RestaurantCard'
 import { mockBurgerData } from '../utils/__mocks__'
 import Shimmer from './Shimmer';
-import useDispatch from 'react-redux'
-import toogleItem from "../redux/slices/CurrentItem"
+import {useDispatch} from 'react-redux'
+import {toogleItem} from "../redux/slices/CurrentItem"
 const FoodContainer = () => {
     const [burgerdata, setBurger] = useState(null);
     useEffect(() => {
