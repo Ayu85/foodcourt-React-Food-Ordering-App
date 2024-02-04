@@ -4,7 +4,6 @@ import { WALL2 } from '../utils/constants'
 import { WALL3 } from '../utils/constants'
 import { WALL4 } from '../utils/constants'
 import { WALL5 } from '../utils/constants'
-import { WALL6 } from '../utils/constants'
 import lines from '../assets/lines.png'
 const Testimonial = () => {
     return (
@@ -18,10 +17,10 @@ const Testimonial = () => {
                 {/* <img src={WALL6} alt='logo' className='w-40 aspect-square rounded-full absolute bottom-28 right-10 ' /> */}
                 <img src={lines} alt='logo' className='absolute -z-10 w-full -left-20 ' />
             </div>
-            <div className='bg-[#fff2ea] w-[35%] absolute right-5 h-[90%] top-16 '>
+            <div className='bg-[#fff2ea] w-[35%] absolute right-5 h-[90%] top-16 flex justify-center flex-col items-center'>
                 <div>
-                    <h1>2000+</h1>
-                    <h2>Regular customers</h2>
+                    <h1 className='text-6xl  text-zinc-700'>2000+</h1>
+                    <h2 className='text-[#FF5454] text-sm tracking-wide pt-3 '>REGULAR CUSTOMERS</h2>
                 </div>
                 <div>Testimonails here</div>
             </div>
