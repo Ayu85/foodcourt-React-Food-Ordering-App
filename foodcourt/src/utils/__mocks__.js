@@ -9919,30 +9919,35 @@ export const CUSTOMERS = [
         name: "Alice Smith",
         review: "Absolutely love this food app! The variety of cuisines and easy ordering process make it my go-to choice every time.",
         rating: 5,
+        place: 'USA',
         profile_picture: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         name: "John Doe",
         review: "Convenient and reliable.Orders arrive on time, and the app interface is user- friendly.Highly recommend!",
         rating: 4,
+        place: 'New York',
         profile_picture: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmVzc2lvbmFsfGVufDB8fDB8fHww    "
     },
     {
         name: "Emily Johnson",
         review: "Amazing app! I'm impressed by the seamless experience and quick delivery. Will definitely use it again.",
         rating: 5,
+        place: 'Germany',
         profile_picture: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D   "
     },
     {
         name: "Michael Brown",
         review: "Great selection of restaurants and dishes.Ordering is a breeze, and the app keeps getting better with updates.",
         rating: 4,
+        place: 'San Fransisco',
         profile_picture: "https://images.unsplash.com/photo-1543132220-3ec99c6094dc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         name: "Sophia Wilson",
         review: "Love the variety and quality of food options available.The app is intuitive, and customer service is excellent.",
         rating: 5,
+        place: 'India',
         profile_picture: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
 ]
