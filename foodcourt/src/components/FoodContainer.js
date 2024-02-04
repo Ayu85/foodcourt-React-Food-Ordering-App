@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import chicken from "../assets/chicken.png"
@@ -8,27 +8,15 @@ import pizza from "../assets/pizza.png"
 import snack from "../assets/fastfood.png"
 import RestaurantCard from './RestaurantCard'
 import { mockBurgerData } from '../utils/__mocks__'
-const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
-        items: 5
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 3
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1
-    }
-};
+
 const FoodContainer = () => {
-    const [burgerdata, setBurger] = useState(mockBurgerData);
+    const [burgerdata, setBurger] = useState(null);
+    useEffect(() => {
+        setTimeout(() => {
+            setBurger(mockBurgerData)
+        }, 2000)
+    })
+    if (!burgerdata) return;
     return (
         <div className='flex flex-col justify-center items-center pt-10 bg-[#fff2ea]'>
             <div className='text-center'>
