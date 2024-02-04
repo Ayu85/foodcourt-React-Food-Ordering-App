@@ -49,7 +49,7 @@ const FoodContainer = () => {
                 <div className='px-4 py-3 rounded-xl font-semibold text-slate-700 text-lg cursor-pointer
                  border-slate-200 border flex items-center gap-1 hover:bg-[#ffd1bd9d] hover:border-[#FF5454] transition-all'><img src={snack} alt='logo' className='w-9' />Snack</div>
             </div>
-            <div className='flex flex-wrap gap-6 px-20 justify-center pt-9 '>
+            <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
                 {/* box 3 */}
                 {burgerdata.map((items) => {
                     return <RestaurantCard {...items?.card?.card?.info} />
