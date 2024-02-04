@@ -22,7 +22,12 @@ const Testimonial = () => {
                     <h1 className='text-6xl  text-zinc-700'>2000+</h1>
                     <h2 className='text-[#FF5454] text-sm tracking-wide pt-3 '>REGULAR CUSTOMERS</h2>
                 </div>
-                <div>Testimonails here</div>
+                <div>
+                    <h1>Our customers says..</h1>
+                    <div>
+        
+                    </div>
+                </div>
             </div>
 
         </div>
