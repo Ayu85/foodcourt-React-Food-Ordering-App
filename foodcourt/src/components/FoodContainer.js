@@ -34,8 +34,8 @@ const FoodContainer = () => {
         <div className='flex flex-col justify-center items-center pt-10 pb-10  bg-gradient-to-b from-[#fff2ea]'>
             <div className='text-center'>
                 {/* box1 (heading and sub heading)*/}
-                <h1 className='text-3xl font-semibold'>Choose your favourite food !! </h1>
-                <p className='text-md text-slate-600 pt-1'>Get your customized taste choosen amongst 15000+ top rated restaurants</p>
+                <h1 className='text-3xl font-semibold text-[#00031F]'>Choose your favourite food !! </h1>
+                <p className='text-md text-[#434768] pt-1'>Get your customized taste choosen amongst 15000+ top rated restaurants</p>
             </div>
             <div className='flex flex-wrap justify-center px-5 gap-3 pt-5'>
                 {/* box 2 */}

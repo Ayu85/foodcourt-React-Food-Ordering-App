@@ -29,8 +29,8 @@ const Herosection = () => {
             <div className='absolute top-10  lg:right-[750px] sm:right-44 right-44 hidden md:block lg:block'><ImLocation2 className='text-8xl text-[#F64E61] animate-[bounce_2s_ease-in-out_infinite] ' />
             </div>
             <div className=' lg:w-[600px] lg:pl-20 sm:pr-14 sm:pl-10 pl-5 pr-5 z-40 sm:-mt-20  -mt-20'>
-                <h1 className=' text-6xl font-semibold '>Fastest <span className='text-[#FF5454]'>Food Delivery</span> & Easy Pickup</h1>
-                <p className='italic pt-4'>"Welcome to FlavorFusionHub - your ultimate destination for culinary delight! Discover a world of flavors, from savory to sweet, all in one place. Whether you're craving classics or eager to explore new tastes,
+                <h1 className=' text-6xl font-semibold text-[#00031F]'>Fastest <span className='text-[#FF5454]'>Food Delivery</span> & Easy Pickup</h1>
+                <p className='italic pt-4 text-[#434768]'>"Welcome to FlavorFusionHub - your ultimate destination for culinary delight! Discover a world of flavors, from savory to sweet, all in one place. Whether you're craving classics or eager to explore new tastes,
                     our app brings the best of dining right to your fingertips. Bon appétit!"
                 </p>
                 <buttonsection className="flex gap-5 pt-8">

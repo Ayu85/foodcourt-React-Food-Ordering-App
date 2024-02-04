@@ -37,23 +37,23 @@ const Testimonial = () => {
             </div>
             <div className='bg-[#fff2ea]  lg:w-[35%] md:w-[35%] sm:w-[35%] w-[100%] px-20 absolute right-5 h-[90%] top-16 flex justify-center flex-col md:pl-5 lg:pl-14 sm:pl-5'>
                 <div>
-                    <h1 className='text-6xl  text-zinc-700'>2000+</h1>
+                    <h1 className='text-6xl  text-[#00031F]'>2000+</h1>
                     <h2 className='text-[#FF5454] text-sm tracking-wide pt-1 '>REGULAR CUSTOMERS</h2>
                 </div>
                 <div>
-                    <h1 className='pt-4 text-2xl pb-3 font-semibold'>Our customers says..</h1>
+                    <h1 className='pt-4 text-2xl pb-3 font-semibold text-[#00031F]'>Our customers says..</h1>
                     <div className='w-96 flex flex-col gap-3 pt-4 border-[#efc3c3]  px-4 py-3'>
                         {/* testimonial card */}
                         <div className='flex items-center gap-4 z-50'>
                             {/* profile and name */}
                             <img src={CUSTOMERS[currentUser].profile_picture} alt='logo' className='w-20 aspect-square rounded-full' />
-                            <div><h1 className='text-xl text-zinc-800 font-semibold'>{CUSTOMERS[currentUser].name}</h1>
+                            <div><h1 className='text-xl text-[#00031F] font-semibold'>{CUSTOMERS[currentUser].name}</h1>
                                 <h2>{CUSTOMERS[currentUser].place}</h2>
                             </div>
                         </div>
                         <div className='z-50'>
                             {/* review */}
-                            <p className='text-zinc-600 italic w-80'>{CUSTOMERS[currentUser].review}</p>
+                            <p className='text-[#434768] italic w-80'>{CUSTOMERS[currentUser].review}</p>
                             <h2 className='pt-2'>{CUSTOMERS[currentUser].rating}⭐</h2>
                         </div>
                         <div className='flex gap-3 pt-3'>

@@ -9,8 +9,8 @@ const Secondarysection = () => {
     <div className='lg:flex-row  lg:px-20 lg:pt-20 lg:py-10 bg-gradient-to-l from-[#f9dbce] md:flex md:flex-col
      items-center md:gap-36 md:pt-10 sm:pt-10 sm:flex sm:flex-col sm:gap-36 pt-10 flex flex-col justify-center gap-28'>
       <div className='flex flex-col max-w-96 gap-4 mt-6 relative'>
-        <h1 className='text-3xl font-bold'>Why we are best?</h1>
-        <p1 className="italic ">Discover the excellence of our food ordering website. With seamless navigation, real-time updates, and a tantalizing array of culinary options, we redefine convenience and taste.
+        <h1 className='text-3xl font-bold text-[#00031F]'>Why we are best?</h1>
+        <p1 className="italic text-[#434768]">Discover the excellence of our food ordering website. With seamless navigation, real-time updates, and a tantalizing array of culinary options, we redefine convenience and taste.
           Join us and experience the best in online dining - satisfaction guaranteed!!</p1>
         <button className='bg-[#FF5454] px-6 w-36 py-3 rounded-full text-white text-md'> Read more</button>
         <div className='absolute -z-10 bg-[#f5ddd3] w-60 h-72 -left-14 top-6 animate-wiggle'></div>
