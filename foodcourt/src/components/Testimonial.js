@@ -34,14 +34,14 @@ const Testimonial = () => {
                 {/* <img src={WALL6} alt='logo' className='w-40 aspect-square rounded-full absolute bottom-28 right-10 ' /> */}
                 <img src={lines} alt='logo' className='absolute -z-10 w-full -left-20 ' />
             </div>
-            <div className='bg-[#fff2ea] w-[35%] absolute right-5 h-[90%] top-16 flex justify-center flex-col pl-20'>
+            <div className='bg-[#fff2ea] w-[35%] absolute right-5 h-[90%] top-16 flex justify-center flex-col md:pl-5 lg:pl-20 sm:pl-5'>
                 <div>
                     <h1 className='text-6xl  text-zinc-700'>2000+</h1>
                     <h2 className='text-[#FF5454] text-sm tracking-wide pt-1 '>REGULAR CUSTOMERS</h2>
                 </div>
                 <div>
                     <h1 className='pt-4 text-2xl pb-3 font-semibold'>Our customers says..</h1>
-                    <div className='w-96 flex flex-col gap-3 pt-4 border-[#efc3c3] border px-4 py-3'>
+                    <div className='w-96 flex flex-col gap-3 pt-4 border-[#efc3c3]  px-4 py-3'>
                         {/* testimonial card */}
                         <div className='flex items-center gap-4'>
                             {/* profile and name */}
