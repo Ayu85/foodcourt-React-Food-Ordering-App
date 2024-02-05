@@ -11,6 +11,7 @@ import { mockBurgerData } from '../utils/__mocks__'
 import { mockCakeData } from '../utils/__mocks__';
 import { mockPizzaData } from '../utils/__mocks__';
 import { mockSandwichData } from '../utils/__mocks__';
+import { mockChickenData } from '../utils/__mocks__';
 import Shimmer from './Shimmer';
 import { useDispatch, useSelector } from 'react-redux'
 import { toogleItem } from "../redux/slices/CurrentItem"
@@ -19,6 +20,7 @@ const FoodContainer = () => {
     const [pizzadata, setPizza] = useState(mockPizzaData);
     const [cakedata, setCake] = useState(mockCakeData);
     const [snackdata, setSnack] = useState(mockSandwichData);
+    const [chickendata, setChicken] = useState(mockChickenData)
     const currentItem = useSelector(store => store.currentItem.item.name)
     // useEffect(() => {
     //     setTimeout(() => {
@@ -92,6 +94,14 @@ const FoodContainer = () => {
             </div>
             }
 
+            {currentItem == 'chicken' && <div className='flex flex-wrap gap-8 px-20 justify-center pt-9 '>
+                {/* box 3 */}
+                {chickendata.map((items) => {
+                    return <RestaurantCard {...items?.card?.card?.info} />
+                })}
+
+            </div>
+            }
 
         </div>
     )
