@@ -1,0 +1,6 @@
+![image](https://github.com/Ayu85/foodcourt-React-Food-Ordering-App/assets/103013928/a5dcb609-8ce2-4cc4-86ad-76996d232d92)
+![image](https://github.com/Ayu85/foodcourt-React-Food-Ordering-App/assets/103013928/206f13fe-5c89-4108-aabc-41d729273f8a)
+![image](https://github.com/Ayu85/foodcourt-React-Food-Ordering-App/assets/103013928/e7cd907e-6f85-43aa-8e67-7333e1ca5284)
+![image](https://github.com/Ayu85/foodcourt-React-Food-Ordering-App/assets/103013928/194fde81-76b6-40f8-9628-34e74f7dfbdd)
+![image](https://github.com/Ayu85/foodcourt-React-Food-Ordering-App/assets/103013928/13eb7e73-cdac-4a5a-81b9-7735206e5659)
+![image](https://github.com/Ayu85/foodcourt-React-Food-Ordering-App/assets/103013928/d1eb154e-b46a-46f5-b589-b7913bf76664)
