@@ -8,12 +8,12 @@ import { FaFacebookSquare } from "react-icons/fa";
 const Footer = () => {
     return (
         <wrapper className='flex items-center justify-center'>
-            <div className='flex px-10'>
+            <div className='flex px-10 gap-20 pt-10'>
                 {/* footer main box */}
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 w-72'>
                     {/* box1 */}
                     <img src={logo} alt='logo' className='w-36' />
-                    <p>"Welcome to FlavorFusionHub - your ultimate destination for culinary delight! Discover a world of flavors, from savory to sweet, all in one place. Whether you're craving classics or eager to explore new tastes,
+                    <p className='text-[#434768] italic'> Discover a world of flavors, from savory to sweet, all in one place. Whether you're craving classics or eager to explore new tastes,
                         our app brings the best of dining right to your fingertips. Bon appétit!"</p>
                     <profiles className='flex gap-1 text-[#FF5454]'>
                         <FaLinkedin />
@@ -22,35 +22,36 @@ const Footer = () => {
                         <FaXTwitter />
                     </profiles>
                 </div>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-6'>
                     {/* box2 */}
-                    <h1>About us</h1>
-                    <li>About us</li>
-                    <li>Features</li>
-                    <li>News </li>
-                    <li>Menu</li>
+                    <h1 className='font-semibold text-lg text-[#00031f]'>About us</h1>
+                    <ul className='list-none text-[#434768] flex flex-col gap-3 cursor-pointer'> <li>About us</li>
+                        <li>Features</li>
+                        <li>News </li>
+                        <li>Menu</li>
+                    </ul>
                 </div>
-                <div>
+                <div className='flex flex-col gap-6'>
                     {/* box3 */}
-                    <h1>Company</h1>
-                    <li>Why food court?</li>
-                    <li>Partner with us</li>
-                    <li>FAQ</li>
-                    <li>Blog</li>
+                    <h1 className='font-semibold text-lg text-[#00031f]'>Company</h1>
+                    <ul className='list-none text-[#434768] flex flex-col gap-3 cursor-pointer'> <li>Why food court?</li>
+                        <li>Partner with us</li>
+                        <li>FAQ</li>
+                        <li>Blog</li></ul>
                 </div>
-                <div>
+                <div className='flex flex-col gap-6'>
                     {/* box4 */}
-                    <h1>Support</h1>
-                    <li>Contact</li>
-                    <li>Account</li>
-                    <li>Feedback </li>
-                    <li>Other queries</li>
+                    <h1 className='font-semibold text-lg text-[#00031f]'>Support</h1>
+                    <ul className='list-none text-[#434768] flex flex-col gap-3 cursor-pointer'> <li>Contact</li>
+                        <li>Account</li>
+                        <li>Feedback </li>
+                        <li>Other queries</li></ul>
                 </div>
-                <div>
+                <div className='flex flex-col gap-6'>
                     {/* box5*/}
-                    <h1>Get In Touch</h1>
-                    <li>Questions or feedback !</li>
-                    <li>We,d love to hear from you !</li>
+                    <h1 className='font-semibold text-lg text-[#00031f]'>Get In Touch</h1>
+                    <ul  className='list-none text-[#434768] flex flex-col gap-3 cursor-pointer'>    <li>Questions or feedback !</li>
+                        <li>We,d love to hear from you !</li></ul>
 
                 </div>
             </div>
