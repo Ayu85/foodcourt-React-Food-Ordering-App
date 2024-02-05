@@ -13,7 +13,7 @@ const Header = () => {
     const showHamburgersymbol = useSelector(store => store.hamburgerslice.symbol)
     const showHamburgermenu = useSelector(store => store.hamburgerslice.menu)
 
-    console.log(showHamburgersymbol);
+    // console.log(showHamburgersymbol);
 
     useScroll();
     const dispatch = useDispatch();

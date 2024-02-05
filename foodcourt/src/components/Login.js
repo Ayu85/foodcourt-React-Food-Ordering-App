@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import validate from '../utils/validate';
 const Login = () => {
     const [isSignin, setSignin] = useState(false)
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null)
     const [name, setName] = useState(null)
+    // const error2=validate(email)
+    useEffect(() => {
+        const error1 = validate(email, password)
+        console.log(error1);
+    }, [email, password])
+
     return (
         <div className=' bg-food  gap-3 h-[100vh]  bg-cover bg-no-repeat filter  flex flex-col items-center justify-center' >
             {!isSignin && <><h1 className='text-4xl text-black font-serif font-semibold py-3  '>Login</h1>
