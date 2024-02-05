@@ -15,7 +15,7 @@ const Footer = () => {
                     <img src={logo} alt='logo' className='w-36' />
                     <p>"Welcome to FlavorFusionHub - your ultimate destination for culinary delight! Discover a world of flavors, from savory to sweet, all in one place. Whether you're craving classics or eager to explore new tastes,
                         our app brings the best of dining right to your fingertips. Bon appétit!"</p>
-                    <profiles className='flex gap-1'>
+                    <profiles className='flex gap-1 text-[#FF5454]'>
                         <FaLinkedin />
                         <RiInstagramFill />
                         <FaFacebookSquare />

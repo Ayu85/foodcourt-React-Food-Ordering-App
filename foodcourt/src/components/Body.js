@@ -5,6 +5,7 @@ import Secondarysection from './Secondarysection'
 import FoodContainer from './FoodContainer'
 import Testimonial from './Testimonial'
 import Advertisment from './Advertisment'
+import Footer from './Footer'
 const Body = () => {
 
     return (
@@ -15,6 +16,7 @@ const Body = () => {
             <FoodContainer/>
             <Testimonial/>
             <Advertisment/>
+            <Footer/>
         </>
 
     )
