@@ -1,8 +1,8 @@
 import React from 'react'
 
 const validate = (email, password) => {
-    if (email === null || password === null) return
-    let passwordError = null;
+    // if (email === null || password === null) return
+    let passwordError = false;
     let emailError = false;
     var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
     passwordError = regularExpression.test(password)
