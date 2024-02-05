@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { IoMdLogIn } from "react-icons/io";
 import useLetterAnimation from '../hooks/useLetterAnimation';
+import { SiNextra } from "react-icons/si";
 
 const Herosection = () => {
     const disableScroll = () => {
@@ -34,10 +35,9 @@ const Herosection = () => {
                     our app brings the best of dining right to your fingertips. Bon appétit!"
                 </p>
                 <buttonsection className="flex gap-5 pt-8">
-                    <button className='bg-[#FF5454] px-6 py-3 rounded-full text-white text-md'>Get started</button>
-                    <button className='text-[#FF5454] px-6 py-3 rounded-full
-                     bg-white text-md flex items-center gap-1'><MdPlayCircle className='text-4xl' />
-                        Watch Video</button>
+                    <button className='bg-[#FF5454] px-6 py-3 rounded-full text-white text-md flex items-center gap-2'>Explore Restaurants Near You <SiNextra />
+                    </button>
+
                 </buttonsection>
 
             </div>
