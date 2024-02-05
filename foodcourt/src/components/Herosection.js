@@ -4,11 +4,10 @@ import { TbChartDonutFilled } from "react-icons/tb";
 import { ImLocation2 } from "react-icons/im";
 import { MdPlayCircle } from "react-icons/md";
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { IoMdLogIn } from "react-icons/io";
 import useLetterAnimation from '../hooks/useLetterAnimation';
 import { SiNextra } from "react-icons/si";
-
 const Herosection = () => {
     const disableScroll = () => {
         document.getElementsByTagName('body')[0].style.overflow = 'hidden'
@@ -18,6 +17,7 @@ const Herosection = () => {
     }
     const showHamburgermenu = useSelector(store => store.hamburgerslice.menu)
     const isHeightScrolled = useSelector(store => store.headerTransparency.value)
+    const navigate = useNavigate();
     useEffect(() => {
         showHamburgermenu && disableScroll();
         !showHamburgermenu && enableScroll();
@@ -35,7 +35,9 @@ const Herosection = () => {
                     our app brings the best of dining right to your fingertips. Bon appétit!"
                 </p>
                 <buttonsection className="flex gap-5 pt-8">
-                    <button className='bg-[#FF5454] px-6 py-3 rounded-full text-white text-md flex items-center gap-2'>Explore Restaurants Near You <SiNextra />
+                    <button onClick={() => {
+                        navigate('/restaurants')
+                    }} className='bg-[#FF5454] px-6 py-3 rounded-full text-white text-md flex items-center gap-2'>Explore Restaurants Near You <SiNextra />
                     </button>
 
                 </buttonsection>

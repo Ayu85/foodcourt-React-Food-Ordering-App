@@ -3,6 +3,7 @@ import Body from './components/Body';
 import Login from './components/Login';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import Home from './components/Restaurant/Home';
 const approute = createBrowserRouter([
   {
     path: "/",
@@ -11,13 +12,17 @@ const approute = createBrowserRouter([
   {
     path: '/login',
     element: <Login />
+  },
+  {
+    path: '/restaurants',
+    element: <Home />
   }
 ])
 function App() {
   return (
     <Provider store={store}>
-       <RouterProvider router={approute} />
-      </Provider>
+      <RouterProvider router={approute} />
+    </Provider>
   );
 }
 
