@@ -5,10 +5,14 @@ const Login = () => {
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null)
     const [name, setName] = useState(null)
-    // const error2=validate(email)
+    const emailError = true
+    const PasswordError = true;
+    // if (!emailError || !PasswordError) return
     useEffect(() => {
+        if (!email || !password) return;
         const error1 = validate(email, password)
-        console.log(error1);
+        emailError = error1[0]
+        PasswordError = error1[1]
     }, [email, password])
 
     return (
@@ -20,9 +24,11 @@ const Login = () => {
                         <input onChange={(e) => {
                             setEmail(e.target.value)
                         }} type='mail' placeholder='Enter email ' className='border-[#FF5454] border-b py-3 w-72 rounded-md pl-2 placeholder-shown:bg-[#FFF4F3]' />
+                        <h1 className='text-[#FF5454] -mt-9 ml-1'> </h1>
                         <input onChange={(e) => {
                             setPassword(e.target.value)
                         }} type='password' placeholder='Enter password ' className=' border-[#FF5454] border-b py-3 w-72 rounded-md pl-2 placeholder-shown:bg-[#FFF4F3]' />
+                        <h1 className='text-[#FF5454] -mt-9 ml-1'></h1>
                         <button className='py-3 w-72 rounded-md bg-[#FF5454] text-white'>Login</button>
                     </form>
                     <h2>New user ? <span className='text-[#FF5454] cursor-pointer' onClick={() => {
