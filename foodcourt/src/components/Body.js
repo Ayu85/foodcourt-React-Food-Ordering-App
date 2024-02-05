@@ -6,6 +6,7 @@ import FoodContainer from './FoodContainer'
 import Testimonial from './Testimonial'
 import Advertisment from './Advertisment'
 import Footer from './Footer'
+import Copyright from './Copyright'
 const Body = () => {
 
     return (
@@ -17,6 +18,7 @@ const Body = () => {
             <Testimonial/>
             <Advertisment/>
             <Footer/>
+            <Copyright/>
         </>
 
     )
